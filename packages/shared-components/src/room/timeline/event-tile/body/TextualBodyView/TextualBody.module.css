@@ -41,6 +41,12 @@
     display: flex;
 }
 
+/* Let the body shrink to the tile width instead of growing to fit wide content such as code blocks,
+   which would push the rest of the text out of the (clipped) tile. */
+.annotated > :first-child {
+    min-width: 0;
+}
+
 .annotatedInline {
     display: inline-flex;
 }
